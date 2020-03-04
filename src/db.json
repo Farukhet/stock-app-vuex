@@ -1,0 +1,7 @@
+{
+  "stocks": [
+    { "id": 1, "name": "BMW", "price": 100 },
+    { "id": 2, "name": "benxo", "price": 40 },
+    { "id": 3, "name": "blow", "price": 60 }
+  ]
+}
