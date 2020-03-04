@@ -9,13 +9,14 @@
 </template>
 
 <script>
+// import { mapActions } from "vuex";
 export default {
   name: "StockItems",
   props: ["stock"],
   methods: {
     buyStock() {
+      this.$store.dispatch("addStock");
       console.log("helllp");
-      this.$store.dispatch("stocks/addStock");
     }
   }
 };

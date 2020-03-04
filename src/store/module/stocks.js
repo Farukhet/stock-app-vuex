@@ -1,3 +1,5 @@
+import axios from "axios";
+
 const state = {
   stocks: [
     { id: 1, name: "BMW", price: 100 },
@@ -7,9 +9,8 @@ const state = {
 };
 const mutations = {};
 const actions = {
-  addStock({ commit }) {
-    console.log("farukh ok ");
-    console.log(commit);
+  addStock: () => {
+    console.log("Farukh OK");
   }
 };
 
