@@ -14,7 +14,7 @@ const actions = {
   },
   loadData: ({ commit }) => {
     axios.get("http://localhost:3000/stocks").then(res => {
-      console.log(res);
+      console.log(res.data);
       commit("LoadStocks", res.data);
     });
   }

@@ -1,7 +1,45 @@
 {
   "stocks": [
-    { "id": 1, "name": "BMW", "price": 100 },
-    { "id": 2, "name": "benxo", "price": 40 },
-    { "id": 3, "name": "blow", "price": 60 }
+    {
+      "id": 1,
+      "name": "BMW",
+      "price": 100
+    },
+    {
+      "id": 2,
+      "name": "benxo",
+      "price": 40
+    },
+    {
+      "id": 3,
+      "name": "blow",
+      "price": 60
+    }
+  ],
+  "shares": [
+    {
+      "id": 2,
+      "name": "benxo",
+      "price": 40,
+      "quantity": "230"
+    },
+    {
+      "id": 3,
+      "name": "blow",
+      "price": 60,
+      "quantity": "4440"
+    },
+    {
+      "name": "benxo",
+      "price": 40,
+      "quantity": "8999",
+      "id": 4
+    },
+    {
+      "name": "benxo",
+      "price": 40,
+      "quantity": "8999",
+      "id": 5
+    }
   ]
 }
