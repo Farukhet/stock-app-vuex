@@ -16,6 +16,9 @@ export default {
     ...mapState({
       stocks: state => state.stocks.stocks
     })
+  },
+  created() {
+    this.$store.dispatch("loadData");
   }
 };
 </script>

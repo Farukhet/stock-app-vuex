@@ -1,16 +1,22 @@
 import axios from "axios";
 
 const state = {
-  stocks: [
-    { id: 1, name: "BMW", price: 100 },
-    { id: 2, name: "benxo", price: 40 },
-    { id: 3, name: "blow", price: 60 }
-  ]
+  stocks: []
 };
-const mutations = {};
+const mutations = {
+  LoadStocks(state, payload) {
+    state.stocks = payload;
+  }
+};
 const actions = {
   addStock: () => {
     console.log("Farukh OK");
+  },
+  loadData: ({ commit }) => {
+    axios.get("http://localhost:3000/stocks").then(res => {
+      console.log(res);
+      commit("LoadStocks", res.data);
+    });
   }
 };
 
