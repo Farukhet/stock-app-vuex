@@ -4,18 +4,15 @@ const state = {
   stocks: []
 };
 const mutations = {
-  LoadStocks(state, payload) {
+  INIT_STOCKS(state, payload) {
     state.stocks = payload;
   }
 };
 const actions = {
-  addStock: () => {
-    console.log("Farukh OK");
-  },
-  loadData: ({ commit }) => {
+  intiStocks: ({ commit }) => {
     axios.get("http://localhost:3000/stocks").then(res => {
       console.log(res.data);
-      commit("LoadStocks", res.data);
+      commit("INIT_STOCKS", res.data);
     });
   }
 };

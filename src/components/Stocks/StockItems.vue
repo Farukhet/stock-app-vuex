@@ -4,7 +4,7 @@
     <div class="card-body">
       <input type="number" class="form-control m-1" v-model="quantity" />
       <button
-        class="btn btn-success"
+        class="btn btn-success "
         @click="buyStock"
         :disabled="quantity <= 0"
       >
@@ -21,7 +21,7 @@ export default {
   props: ["stock"],
   data() {
     return {
-      quantity: 0
+      quantity: ""
     };
   },
   methods: {
@@ -29,11 +29,10 @@ export default {
       const newStock = {
         name: this.stock.name,
         price: this.stock.price,
-        quantity: this.quantity
+        quantity: Number(this.quantity)
       };
       console.log(newStock);
       this.$store.dispatch("addStock", newStock);
-      console.log("buyStock ");
       this.quantity = 0;
     }
   }

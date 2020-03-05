@@ -18,7 +18,7 @@ export default {
     })
   },
   created() {
-    this.$store.dispatch("loadData");
+    this.$store.dispatch("intiStocks");
   }
 };
 </script>
