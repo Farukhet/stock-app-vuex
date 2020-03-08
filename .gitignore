@@ -12,8 +12,8 @@ yarn-debug.log*
 yarn-error.log*
 
 # Lock Files
-package-lock.json
-yarn.lock
+package-lock.json*
+yarn.lock*
 
 # Editor directories and files
 .idea
