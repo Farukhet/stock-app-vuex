@@ -3,7 +3,7 @@
     <div class="card-header">{{ share.name }} - {{ share.price }} Price</div>
     <div class="card-body">
       <button class="btn btn-warning " @click="sellStock">
-        Sell
+        Sell Stocks
       </button>
     </div>
   </div>
